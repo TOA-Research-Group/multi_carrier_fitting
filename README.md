@@ -1,5 +1,12 @@
 ## Usage
-It accepts PPMS output files as input. Please specify the channels (x) you used for measuring the longitudinal resistance and the transverse resistance. The program read the columns of the magnetic filed and Bridge x Resistances. See example.py for further usage.
+It accepts PPMS output files as input. Please specify the channels (x) you used for measuring the longitudinal resistance and the transverse resistance. The program read the columns of the magnetic filed and Bridge x Resistances.
+
+```python
+popt, pcov = HRMR_PPMS.multi_carrier_fit(h_, sigma_xx, sigma_yx , p0=[1e26, 1e-2, -1e26, -1e-2])
+```
+h_: np.array of magnetic fields , p0: Initial values ​​of carrier parameters. Here, carriers are defined in the order of electrons and holes, with a carrier concentration of 1e26\[/m^3\] and a mobility of 1e-2\[m^2/Vs\].
+
+See example.py for further usage.
 
 ## Physics
 When multiple bands contribute to conduction, it is difficult to estimate the mobility and carrier concentration solely from the Hall voltage. Based on the standard multi-carrier model, the longitudinal conductivity $\sigma_{xx}$ and transverse conductivity $\sigma_{xy}$ are expressed by the following equations []:
@@ -37,7 +44,7 @@ The Onsager theorem states that the off-diagonal transport coefficients $L_{ij}$
 $$\sigma_{yx}(\mathbf{B}) = \sigma_{xy}(-\mathbf{B}) = -\sigma_{xy}(\mathbf{B})$$
 
 ### Isotropic resistivity
-This is precisely true in some cases due to symmetry, such as in cubic crystal systems.
+This is not strictly true in some cases depending on the symmetry.
 $$\rho_{xx} = \rho_{yy}$$
 
 By applying these relations, the conductivity can be expressed solely in terms of $\rho_{xx}$ and $\rho_{yx}$ as:
