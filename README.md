@@ -12,7 +12,7 @@ See example.py for further usage.
 When multiple bands contribute to conduction, it is difficult to estimate the mobility and carrier concentration solely from the Hall voltage. Based on the standard multi-carrier model, the longitudinal conductivity $\sigma_{xx}$ and transverse conductivity $\sigma_{xy}$ are expressed by the following equations []:
 
 $$\sigma_{xx}(\mathbf{B}) = \sum_i \frac{n_i e \mu_i}{1 + (\mu_i B)^2}$$
-$$\sigma_{xy}(\mathbf{B}) = \sum_i \frac{s_i n_i e \mu_i^2 B}{1 + (\mu_i B)^2}$$
+$$\sigma_{yx}(\mathbf{B}) = \sum_i \frac{s_i n_i e \mu_i^2 B}{1 + (\mu_i B)^2}$$
 
 Here, $i$ is the carrier index, $e$ is the elementary charge, $\mu_i$ is the mobility, and $s_i$ takes the value $+1$ for holes and $-1$ for electrons. By using conductivity, the total conductivity can be expressed as the sum of the conductivities for each carrier type. Since the values obtained from standard measurements are resistances, such as longitudinal resistance and Hall resistance, they must be converted into conductivities. @schematicHallBar shows a typical setup for Hall measurements.
 
