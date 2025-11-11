@@ -14,7 +14,7 @@ When multiple bands contribute to conduction, it is difficult to estimate the mo
 $$\sigma_{xx}(\mathbf{B}) = \sum_i \frac{n_i e \mu_i}{1 + (\mu_i B)^2}$$
 $$\sigma_{yx}(\mathbf{B}) = \sum_i \frac{s_i n_i e \mu_i^2 B}{1 + (\mu_i B)^2}$$
 
-Here, $i$ is the carrier index, $e$ is the elementary charge, $\mu_i$ is the mobility, and $s_i$ takes the value $+1$ for holes and $-1$ for electrons. By using conductivity, the total conductivity can be expressed as the sum of the conductivities for each carrier type. Since the values obtained from standard measurements are resistances, such as longitudinal resistance and Hall resistance, they must be converted into conductivities. @schematicHallBar shows a typical setup for Hall measurements.
+Here, $i$ is the carrier index, $e$ is the elementary charge, $\mu_i$ is the mobility, and $s_i$ takes the value $-1$ for holes and $+1$ for electrons. By using conductivity, the total conductivity can be expressed as the sum of the conductivities for each carrier type. Since the values obtained from standard measurements are resistances, such as longitudinal resistance and Hall resistance, they must be converted into conductivities. @schematicHallBar shows a typical setup for Hall measurements.
 
 ![](./HallDiagram.png)
 
